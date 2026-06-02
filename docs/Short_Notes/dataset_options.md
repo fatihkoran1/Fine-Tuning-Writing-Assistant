@@ -20,3 +20,11 @@ Type: Open/public multilingual text corpus
 Possible use: Select safe licensed text and artificially limit it to simulate low-resource conditions.
 Pros: Strong license/ethics argument.
 Risks: Less directly connected to low-resource language preservation.
+
+# Initial Decision
+
+My initial decision is to use FLORES+.
+
+I chose FLORES+ because it is structured, multilingual, documented, and realistic for a 19-day student project. It allows me to select one language and limit the examples to simulate a low-resource setting.
+
+I will not claim that this fully represents natural Guarani Mbya writing. Instead, I use Guarani Mbya as the real-world inspiration and use FLORES+ to test the technical question: can a small fine-tuned model adapt to limited examples, or does it mostly memorize?
