@@ -1,0 +1,4 @@
+# Optional QLoRA dependencies.
+# Important: bitsandbytes works best on Linux with a CUDA GPU.
+# On Windows, use this only if your CUDA setup supports it.
+bitsandbytes

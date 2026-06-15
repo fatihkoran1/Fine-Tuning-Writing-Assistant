@@ -1,0 +1,19 @@
+# Core libraries for baseline testing and fine-tuning experiments
+torch
+transformers
+accelerate
+datasets
+pandas
+numpy
+tqdm
+safetensors
+sentencepiece
+
+# Notebook support
+jupyter
+ipykernel
+
+# Fine-tuning libraries for the next steps
+peft
+evaluate
+scikit-learn

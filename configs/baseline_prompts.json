@@ -1,0 +1,32 @@
+[
+  {
+    "prompt_id": "p01",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Avañe'ẽ ha'e"
+  },
+  {
+    "prompt_id": "p02",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Paraguái retãme"
+  },
+  {
+    "prompt_id": "p03",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Ko kuatiañe'ẽ omombe'u"
+  },
+  {
+    "prompt_id": "p04",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Mitãnguéra oho"
+  },
+  {
+    "prompt_id": "p05",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Ñane retã rembiasakue"
+  },
+  {
+    "prompt_id": "p06",
+    "prompt_type": "instruction_style",
+    "prompt_text": "Continue this short Guarani text: Avañe'ẽ"
+  }
+]

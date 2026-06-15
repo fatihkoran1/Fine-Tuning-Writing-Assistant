@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large local artifacts
+models/base/*
+models/fine_tuned/*
+!models/base/.gitkeep
+!models/fine_tuned/.gitkeep
+
+# Optional: ignore raw data if licensing/privacy is uncertain
+data/raw/*
+!data/raw/.gitkeep
+
+# Keep processed split files only if they are safe to commit.
+# Remove the next lines if you want Git to track train/validation/test CSV files.
+# data/processed/*
+# !data/processed/.gitkeep
+
+# Logs and generated outputs
+logs/*
+!logs/.gitkeep
+results/*.tmp
