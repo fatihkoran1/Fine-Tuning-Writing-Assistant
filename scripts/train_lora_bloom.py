@@ -1,6 +1,7 @@
 import argparse
 import json
 import time
+from datetime import datetime
 from pathlib import Path
 
 import torch
@@ -15,20 +16,12 @@ from transformers import (
 )
 
 
-def get_peak_gpu_memory_mb():
-    if not torch.cuda.is_available():
-        return None
-
-    return round(torch.cuda.max_memory_allocated() / 1024 / 1024, 2)
-
-
 def count_trainable_parameters(model):
     trainable_parameters = 0
     total_parameters = 0
 
     for parameter in model.parameters():
         total_parameters += parameter.numel()
-
         if parameter.requires_grad:
             trainable_parameters += parameter.numel()
 
@@ -70,67 +63,104 @@ def tokenize_and_chunk_function(examples, tokenizer, max_seq_length):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="LoRA fine-tuning smoke test for SmolLM2.")
+    parser = argparse.ArgumentParser()
 
-    parser.add_argument("--model_name", default="HuggingFaceTB/SmolLM2-360M")
-    parser.add_argument("--train_file", default="data/processed/train.jsonl")
-    parser.add_argument("--validation_file", default="data/processed/validation.jsonl")
-    parser.add_argument("--output_dir", default="models/fine_tuned/smollm2_lora_512_smoke")
-    parser.add_argument("--max_seq_length", type=int, default=512)
-    parser.add_argument("--max_steps", type=int, default=30)
-    parser.add_argument("--learning_rate", type=float, default=2e-4)
-    parser.add_argument("--batch_size", type=int, default=1)
-    parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
+    parser.add_argument(
+        "--model_name",
+        type=str,
+        default="bigscience/bloom-560m",
+    )
+
+    parser.add_argument(
+        "--train_file",
+        type=str,
+        default="data/processed/train.jsonl",
+    )
+
+    parser.add_argument(
+        "--validation_file",
+        type=str,
+        default="data/processed/validation.jsonl",
+    )
+
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default="models/fine_tuned/bloom_560m_lora_512_chunked_smoke",
+    )
+
+    parser.add_argument(
+        "--max_seq_length",
+        type=int,
+        default=512,
+    )
+
+    parser.add_argument(
+        "--max_steps",
+        type=int,
+        default=30,
+    )
+
+    parser.add_argument(
+        "--batch_size",
+        type=int,
+        default=1,
+    )
+
+    parser.add_argument(
+        "--gradient_accumulation_steps",
+        type=int,
+        default=4,
+    )
+
+    parser.add_argument(
+        "--learning_rate",
+        type=float,
+        default=2e-4,
+    )
 
     args = parser.parse_args()
-
-    if not torch.cuda.is_available():
-        raise RuntimeError("CUDA is not available. This LoRA test should run on GPU.")
-
-    torch.cuda.reset_peak_memory_stats()
-
-    start_time = time.time()
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    logs_dir = Path("logs")
+    logs_dir.mkdir(parents=True, exist_ok=True)
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
     print(f"Model: {args.model_name}")
-    print(f"GPU: {torch.cuda.get_device_name(0)}")
+    print(f"GPU: {torch.cuda.get_device_name(0) if device == 'cuda' else 'CPU'}")
     print(f"Max sequence length: {args.max_seq_length}")
     print(f"Max steps: {args.max_steps}")
     print(f"Batch size: {args.batch_size}")
     print(f"Gradient accumulation steps: {args.gradient_accumulation_steps}")
 
-    tokenizer = AutoTokenizer.from_pretrained(
-        args.model_name,
-        cache_dir="models/base/huggingface_cache",
-    )
+    if device == "cuda":
+        torch.cuda.empty_cache()
+        torch.cuda.reset_peak_memory_stats()
+
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model_name,
-        torch_dtype=torch.float16,
-        device_map={"": 0},
-        low_cpu_mem_usage=True,
-        cache_dir="models/base/huggingface_cache",
-    )
+    if device == "cuda":
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model_name,
+            dtype=torch.float16,
+            device_map={"": 0},
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(args.model_name)
 
     model.config.use_cache = False
 
+    # BLOOM-specific LoRA target module
     lora_config = LoraConfig(
         r=8,
         lora_alpha=16,
-        target_modules=[
-            "q_proj",
-            "k_proj",
-            "v_proj",
-            "o_proj",
-            "gate_proj",
-            "up_proj",
-            "down_proj",
-        ],
+        target_modules=["query_key_value"],
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM",
@@ -153,10 +183,17 @@ def main():
     )
 
     tokenized_dataset = dataset.map(
-    lambda examples: tokenize_and_chunk_function(examples, tokenizer, args.max_seq_length),
-    batched=True,
-    remove_columns=dataset["train"].column_names,
+        lambda examples: tokenize_and_chunk_function(
+            examples,
+            tokenizer,
+            args.max_seq_length,
+        ),
+        batched=True,
+        remove_columns=dataset["train"].column_names,
     )
+
+    print(f"Train chunks: {len(tokenized_dataset['train'])}")
+    print(f"Validation chunks: {len(tokenized_dataset['validation'])}")
 
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
@@ -165,67 +202,82 @@ def main():
 
     training_args = TrainingArguments(
         output_dir=str(output_dir),
+
         max_steps=args.max_steps,
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
+
         learning_rate=args.learning_rate,
         fp16=True,
-        logging_steps=5,
+
+        logging_steps=10,
         eval_steps=250,
         save_steps=250,
         eval_strategy="steps",
         save_strategy="steps",
+
         report_to="none",
         remove_unused_columns=False,
     )
 
     trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized_dataset["train"],
-        eval_dataset=tokenized_dataset["validation"],
-        data_collator=data_collator,
-    )
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_dataset["train"],
+    eval_dataset=tokenized_dataset["validation"],
+    data_collator=data_collator,
+)
+
+    start_time = time.time()
 
     trainer.train()
 
-    eval_results = trainer.evaluate()
+    training_seconds = time.time() - start_time
 
-    model.save_pretrained(output_dir)
-    tokenizer.save_pretrained(output_dir)
+    evaluation_results = trainer.evaluate()
 
-    training_seconds = round(time.time() - start_time, 2)
-    peak_gpu_memory_mb = get_peak_gpu_memory_mb()
+    trainer.save_model(str(output_dir))
+    tokenizer.save_pretrained(str(output_dir))
+
+    peak_gpu_memory_mb = None
+
+    if device == "cuda":
+        peak_gpu_memory_mb = round(torch.cuda.max_memory_allocated() / 1024 / 1024, 2)
 
     metadata = {
+        "run_timestamp": datetime.now().isoformat(timespec="seconds"),
         "model_name": args.model_name,
         "output_dir": str(output_dir),
         "max_seq_length": args.max_seq_length,
         "max_steps": args.max_steps,
-        "learning_rate": args.learning_rate,
         "batch_size": args.batch_size,
         "gradient_accumulation_steps": args.gradient_accumulation_steps,
-        "training_seconds": training_seconds,
-        "peak_gpu_memory_mb": peak_gpu_memory_mb,
+        "learning_rate": args.learning_rate,
+        "lora_r": 8,
+        "lora_alpha": 16,
+        "lora_target_modules": ["query_key_value"],
         "trainable_parameters": trainable_parameters,
         "total_parameters": total_parameters,
         "trainable_percentage": trainable_percentage,
-        "eval_results": eval_results,
+        "train_chunks": len(tokenized_dataset["train"]),
+        "validation_chunks": len(tokenized_dataset["validation"]),
+        "training_seconds": round(training_seconds, 2),
+        "peak_gpu_memory_mb": peak_gpu_memory_mb,
+        "evaluation_results": evaluation_results,
     }
 
-    log_path = Path("logs/lora_smoke_tests.jsonl")
-    log_path.parent.mkdir(parents=True, exist_ok=True)
+    metadata_path = logs_dir / "bloom_lora_training_log.jsonl"
 
-    with open(log_path, "a", encoding="utf-8") as file:
+    with open(metadata_path, "a", encoding="utf-8") as file:
         file.write(json.dumps(metadata, ensure_ascii=False) + "\n")
 
-    print("Smoke test completed.")
+    print("BLOOM LoRA training completed.")
     print(f"Adapter saved to: {output_dir}")
-    print(f"Metadata saved to: {log_path}")
-    print(f"Training seconds: {training_seconds}")
+    print(f"Metadata saved to: {metadata_path}")
+    print(f"Training seconds: {training_seconds:.2f}")
     print(f"Peak GPU memory MB: {peak_gpu_memory_mb}")
-    print(f"Evaluation results: {eval_results}")
+    print(f"Evaluation results: {evaluation_results}")
 
 
 if __name__ == "__main__":

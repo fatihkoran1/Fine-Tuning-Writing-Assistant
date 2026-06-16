@@ -63,13 +63,13 @@ def main():
     parser.add_argument(
         "--base_model_name",
         type=str,
-        default="HuggingFaceTB/SmolLM2-360M",
+        default="bigscience/bloom-560m",
     )
 
     parser.add_argument(
         "--adapter_path",
         type=str,
-        default="models/fine_tuned/smollm2_lora_512_chunked_100",
+        default="models/fine_tuned/bloom_560m_lora_512_chunked_wide_500",
     )
 
     parser.add_argument(
@@ -81,7 +81,7 @@ def main():
     parser.add_argument(
         "--output_path",
         type=str,
-        default="results/post_finetune_outputs_512_chunked_100.csv",
+        default="results/post_finetune_outputs_bloom_wide_512_chunked_500.csv",
     )
 
     parser.add_argument(
@@ -129,9 +129,7 @@ def main():
             device_map={"": 0},
         )
     else:
-        base_model = AutoModelForCausalLM.from_pretrained(
-            args.base_model_name,
-        )
+        base_model = AutoModelForCausalLM.from_pretrained(args.base_model_name)
 
     model = PeftModel.from_pretrained(base_model, args.adapter_path)
     model.eval()
@@ -141,7 +139,6 @@ def main():
     prompts = load_prompts(args.prompt_path)
 
     rows = []
-
     run_timestamp = datetime.now().isoformat(timespec="seconds")
 
     for prompt in prompts:
@@ -215,7 +212,7 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Saved LoRA generation outputs to: {output_path}")
+    print(f"Saved BLOOM LoRA generation outputs to: {output_path}")
 
 
 if __name__ == "__main__":

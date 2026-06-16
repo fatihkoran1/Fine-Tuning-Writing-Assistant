@@ -1,0 +1,91 @@
+﻿prompt_id,prompt_type,prompt_text,baseline_output_text,lora_output_text,baseline_tokens_per_second,lora_tokens_per_second,baseline_gpu_peak_memory_mb,lora_gpu_peak_memory_mb
+p10,sentence_continuation,Ha upéicha,"Ha upéicha yúcá,
+péché máích,
+máích upéicha yúcá.
+
+""We are going to go to the village of the Cannibals, and there we will eat all kinds of food, and we will make a big fire and we will roast all kinds of animals and we will eat them.""
+
+",Ha upéicha hai hañepe káva hava upéicha. Vaiyáva upéicha hai hañepe káva upéicha. Upéicha hai hañepe káva hava upéicha hañepe káva hava. Vaiyáva upéicha hai ha,13.962,7.116,717.86,723.25
+p09,sentence_continuation,Ñande ñe'ẽ,"Ñande ñe'ẽ, the ñe'ẽ is not used in writing in the name of the God of the Sun, ñe'ẽ.
+
+Ñe'ẽ is not a proper name. It is a name that is used to refer to a specific person.
+
+When someone is speaking to you, you can say ñe'ẽ to show that you","Ñande ñe'ẽãi kõyẽ ñe'ẽãi hái, kõyẽãi kõyẽ ñe'ẽãi hai. Hái kõyẽãi ñe'ẽãi hai, hai hai kõyẽãi ñe'ẽ",14.268,7.136,718.01,723.25
+p08,sentence_continuation,Ko ára,"Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+K",Ko áraĩtói oĩa iko kuẽ oĩa oĩãkua kuẽ. Ko áraĩtói oĩa oĩãkua kuẽ oĩa iko iko oĩãkua iko ha'e ko áraĩtó,14.023,7.025,717.86,723.25
+p07,sentence_continuation,Oñemoarandu haguã,"Oñemoarandu haguã, and the Spanish word for ""to go away."" This was a common way to indicate a departure, and the Spanish word for ""to go"" is ""querer,"" which comes from the same root.
+
+What is a ""cogar""? A ""cogar"" is a Spanish term for ""a bottle of wine."" A ""cogar"" is also a way of","Oñemoarandu haguãva'ãi: Kújãva'ãi'ãi hende'ãi haguãva'ãi, pumãguéra-yaguáva'ãi. Pumãguéra-yaguáva'ãi: haguãva'ãi haguãva'ãi haguãva'ã",13.884,6.81,718.08,723.25
+p06,sentence_continuation,Tetã guasu,"Tetã guasu, the most common, is a mixture of honey and water.
+
+How do you make a home remedy for a sore throat?
+
+To make a remedy for a sore throat, you can add a bit of honey to a glass of water and drink it. You can also add some lemon juice to a glass of water, and drink it. This will help you get relief from a sore","Tetã guasuãkãuã, tepéhéi, tepéhéi ikóva, upere, upere ikóva, tepéhéi, upere ikóva, upere ikóva, kapã tepéhéi, upere ikóva, kapã",13.798,7.111,717.86,723.25
+p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,"Ko kuatiañe'ẽ omombe'u yi mawu'i mawu'i yi njiru'i. 'Uwumbe'u'i yi njiru'i yi yi njiru'i, yi njiru'i yi njiru'i yi njiru'i yi njiru'",Ko kuatiañe'ẽ omombe'u'ẽ. Ko kuatiañe'ẽ kuatiañe'ẽ ha'ãkatiañe'ẽ. Ko kuatiañe'ẽ ha'ãkatiañe'ẽ ko kuatiañe'ẽ ha'ãkatiañe'ẽ kuat,13.748,7.11,718.29,723.25
+p04,sentence_continuation,Mitãnguéra oho,"Mitãnguéra oho, são uma das meninas mais importantes do mundo!
+
+This means, 'This is the most important child of the world!'
+
+It's a phrase used to describe the most important person in a group, or in a team, or in a school, or in a family.
+
+Example: We are all proud of our daughter, because she is the","Mitãnguéra oho tijuéra orohe oñempeguéra orohe kuãméra.
+
+The first-person plural of the word “guéra” means “people.” The second-person plural of the word “guéra” means “you.”
+
+The first-person plural of the word “méra” means “women.”",14.067,7.239,717.98,723.25
+p11,sentence_continuation,Tekove porã,"Tekove porã vydáváme na končnosti.
+
+Výška
+
+Výška (13.4.2016)
+
+### 1.1.2.1.                               ","Tekove porãs avekõ ñahe ikãva ha'ãy, iñe oñembo ñahe, mba ha'ãy ñe'ãy ñe'ãy oñe oñembo ñahe.
+
+Era oñe oñe'ãy ñe'ãy o",13.918,7.026,717.86,723.25
+p02,sentence_continuation,Paraguái retãme,"Paraguái retãme, são uma das meninas mais estranhas do Brasil, e como não estar tudo assim de um mundo de pós-são, como se era em 2014, o primeiro dia que era como uma máscara, o que está ocorrendo na minha vida, o","Paraguái retãme.
+
+Tựa Từa:
+
+Bắc Giang Chúa:
+
+Bắc Giang Chúa:
+
+Bắc Giang Chúa:
+
+Bắc Giang Chúa:
+
+Bắc Giang Chúa:
+
+Bắc Giang",15.495,7.246,717.95,723.25
+p01,sentence_continuation,Avañe'ẽ ha'e,"Avañe'ẽ ha'eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽmẽ
+
+‘Avañe’ẽ ha’eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽ","Avañe'ẽ ha'e povũ'ẽva'ãva oĩ'ẽva'ãva oĩ'ẽva'ãva, oĩ'ẽva'ãva oĩ'ẽva'ãva hava'ẽva'ãva oĩ'ẽva'ãva.
+
+Oĩ'ẽ",13.911,7.088,718.08,723.25
+p05,sentence_continuation,Ñane retã rembiasakue,"Ñane retã rembiasakue ytú!
+
+If you want to know more about how to use the word “tú” in Spanish, check out this video:
+
+How to Use the Spanish “Tú”
+
+Tú is a very common way to refer to yourself in Spanish. But, like most things in Spanish, it has its own nuances, so let’s take a closer look at","Ñane retã rembiasakue.
+
+Para ponerse un chico a tienda. Tienen ahora dos o tres. Y ahora el chico, deja de ser muy malo. Y ahora puedo ser muy malo. Y ahora no soy muy malo.
+
+Yo, juego de la guerra. Es m",13.779,7.202,718.01,723.25
+p12,sentence_continuation,Yvy ári,"Yvy áriu sínia, áti.
+
+Víðarr:                                                                ","Yvy áriyó. Pénteki együttevei kõrĩre áryára. Kõrĩre aryára áriyó, áriyó. Kõrĩre aryára. Pénteki együttevei kõrĩre á",12.244,7.191,717.86,723.25
