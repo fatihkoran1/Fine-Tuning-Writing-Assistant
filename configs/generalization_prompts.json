@@ -1,0 +1,32 @@
+[
+  {
+    "prompt_id": "g01",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Ko mitã oñemoarandu"
+  },
+  {
+    "prompt_id": "g02",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Ñande reko ha ñane ñe'ẽ"
+  },
+  {
+    "prompt_id": "g03",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Peteĩ mbo'ehao guasu"
+  },
+  {
+    "prompt_id": "g04",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Yvoty ha yvyra"
+  },
+  {
+    "prompt_id": "g05",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Ko tavape oiko"
+  },
+  {
+    "prompt_id": "g06",
+    "prompt_type": "new_generalization_prompt",
+    "prompt_text": "Arandu ha tembiapo"
+  }
+]
