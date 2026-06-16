@@ -1,0 +1,381 @@
+run_timestamp,model_name,parameter_count,device,gpu_memory_mb_after_loading,load_seconds,prompt_id,prompt_type,prompt_text,max_new_tokens,temperature,top_p,seed,generated_text,continuation_only,input_tokens,generated_tokens,generation_seconds,tokens_per_second,gpu_memory_mb_after_generation,gpu_peak_memory_mb_for_prompt
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,Avañe'ẽ ha'e hẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁ�,hẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁẽ ὁ�,11,80,3.677,21.757,,
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme:
+
+1. I have heard the word ""cirque"" from many times, and it means ""to be held in reverence.""
+
+2. The word ""cirque"" means ""to be held in reverence.""
+
+3. ""Cirque"" means ""to be held in reverence.""
+
+4. It means ""to be held in reverence.""
+
+",":
+
+1. I have heard the word ""cirque"" from many times, and it means ""to be held in reverence.""
+
+2. The word ""cirque"" means ""to be held in reverence.""
+
+3. ""Cirque"" means ""to be held in reverence.""
+
+4. It means ""to be held in reverence.""",7,80,3.485,22.956,,
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,Ko kuatiañe'ẽ omombe'u hu'átia 'ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,hu'átia 'ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,16,80,3.548,22.548,,
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,Mitãnguéra oho ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó,ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó ó,8,80,3.5,22.857,,
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakue Ña açar í bêts, içi ou bêts.
+
+Kêlêmêtê mêlêtê sêlê mêlêtê.
+
+Bêtsêtê mêlêtêsêbêtêmêmêtêmêtê.
+","Ña açar í bêts, içi ou bêts.
+
+Kêlêmêtê mêlêtê sêlê mêlêtê.
+
+Bêtsêtê mêlêtêsêbêtêmêmêtêmêtê.",10,80,3.502,22.844,,
+2026-06-16T01:48:47,openai-community/gpt2,124439808,cpu,,48.885,p06,instruction_style,Continue this short Guarani text: Avañe'ẽ,80,0.7,0.9,42,Continue this short Guarani text: Avañe'ẽếẽếếếếếếếếếếếếếếếếếếếếếếếế�,ếẽếếếếếếếếếếếếếếếếếếếếếếếế�,16,80,3.528,22.676,,
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,Avañe'ẽ ha'e o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o,o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o,7,80,3.336,23.981,1075.74,1095.95
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme o que eu penso sobre o que eu vejo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo.","o que eu penso sobre o que eu vejo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo.",6,80,2.931,27.294,1075.74,1095.86
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,Ko kuatiañe'ẽ omombe'u oganoñ ku olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku,oganoñ ku olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku,9,80,2.925,27.35,1075.74,1096.14
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho oho, ooh.”
+“Không, không.” Mua đi, mua đi. “Nhưng, nếu có ai muốn, tôi có thể nói cho họ biết, và bạn sẽ thấy, bạn sẽ thấy họ rất hạnh phúc.”
+“Thật không may.” Nói về chuyện đó. “Tôi chỉ muốn nói, đó là một sự cố nghiêm trọng, và tôi không","oho, ooh.”
+“Không, không.” Mua đi, mua đi. “Nhưng, nếu có ai muốn, tôi có thể nói cho họ biết, và bạn sẽ thấy, bạn sẽ thấy họ rất hạnh phúc.”
+“Thật không may.” Nói về chuyện đó. “Tôi chỉ muốn nói, đó là một sự cố nghiêm trọng, và tôi không",6,80,2.948,27.137,1075.74,1095.86
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakue
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku","Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku",9,80,2.926,27.341,1075.74,1096.14
+2026-06-16T02:04:32,bigscience/bloom-560m,559214592,cuda,1066.62,173.631,p06,instruction_style,Continue this short Guarani text: Avañe'ẽ,80,0.7,0.9,42,Continue this short Guarani text: Avañe'ẽ o 'o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´,o 'o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´o´,9,80,2.894,27.643,1075.74,1096.14
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,"Avañe'ẽ ha'eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽmẽ
+
+‘Avañe’ẽ ha’eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽ","ẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽmẽ
+
+‘Avañe’ẽ ha’eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽ",10,80,5.579,14.339,712.2,718.08
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme, são uma das meninas mais estranhas do Brasil, e como não estar tudo assim de um mundo de pós-são, como se era em 2014, o primeiro dia que era como uma máscara, o que está ocorrendo na minha vida, o",", são uma das meninas mais estranhas do Brasil, e como não estar tudo assim de um mundo de pós-são, como se era em 2014, o primeiro dia que era como uma máscara, o que está ocorrendo na minha vida, o",7,80,4.988,16.038,712.2,717.95
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,"Ko kuatiañe'ẽ omombe'u yi mawu'i mawu'i yi njiru'i. 'Uwumbe'u'i yi njiru'i yi yi njiru'i, yi njiru'i yi njiru'i yi njiru'i yi njiru'","yi mawu'i mawu'i yi njiru'i. 'Uwumbe'u'i yi njiru'i yi yi njiru'i, yi njiru'i yi njiru'i yi njiru'i yi njiru'",16,80,4.992,16.026,712.2,718.29
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho, são uma das meninas mais importantes do mundo!
+
+This means, 'This is the most important child of the world!'
+
+It's a phrase used to describe the most important person in a group, or in a team, or in a school, or in a family.
+
+Example: We are all proud of our daughter, because she is the",", são uma das meninas mais importantes do mundo!
+
+This means, 'This is the most important child of the world!'
+
+It's a phrase used to describe the most important person in a group, or in a team, or in a school, or in a family.
+
+Example: We are all proud of our daughter, because she is the",8,80,4.846,16.508,712.2,717.98
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakue ytú!
+
+If you want to know more about how to use the word “tú” in Spanish, check out this video:
+
+How to Use the Spanish “Tú”
+
+Tú is a very common way to refer to yourself in Spanish. But, like most things in Spanish, it has its own nuances, so let’s take a closer look at","ytú!
+
+If you want to know more about how to use the word “tú” in Spanish, check out this video:
+
+How to Use the Spanish “Tú”
+
+Tú is a very common way to refer to yourself in Spanish. But, like most things in Spanish, it has its own nuances, so let’s take a closer look at",9,80,5.014,15.955,712.2,718.01
+2026-06-16T02:10:04,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,95.485,p06,instruction_style,Continue this short Guarani text: Avañe'ẽ,80,0.7,0.9,42,"Continue this short Guarani text: Avañe'ẽ, the priest, told the people to go and bring their wives and children to the village.
+
+""There are many women and children here,"" he said. ""They will be very happy to see you.""
+
+The priest and his people went to the village. The women and children were very happy to see the priest and his people. They were very happy to see the priest and his",", the priest, told the people to go and bring their wives and children to the village.
+
+""There are many women and children here,"" he said. ""They will be very happy to see you.""
+
+The priest and his people went to the village. The women and children were very happy to see the priest and his people. They were very happy to see the priest and his",14,80,4.93,16.227,712.2,718.23
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,Avañe'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha','i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha',11,80,1.9,42.105,252.61,258.2
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme, the only way to escape the city.
+
+I have been traveling in the country for almost ten years now and have never seen anything like this. The people, the people are amazing. People are so amazing. I've been there a lot of times and I've never seen anything like this.
+
+I'm a foreigner, but I've always been a little bit different. I've",", the only way to escape the city.
+
+I have been traveling in the country for almost ten years now and have never seen anything like this. The people, the people are amazing. People are so amazing. I've been there a lot of times and I've never seen anything like this.
+
+I'm a foreigner, but I've always been a little bit different. I've",7,80,1.362,58.737,252.61,258.06
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,Ko kuatiañe'ẽ omombe'u'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i','i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i',16,80,1.188,67.34,252.61,258.38
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho jiêngiêng, ejus ðe ejus nìngus, sei sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, se","jiêngiêng, ejus ðe ejus nìngus, sei sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, se",8,80,1.154,69.324,252.61,258.1
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakuek ñruiçu, ejusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas","k ñruiçu, ejusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas",10,80,1.217,65.735,252.61,258.17
+2026-06-16T02:19:37,openai-community/gpt2,124439808,cuda,243.48,2.388,p06,instruction_style,Continue this short Guarani text: Avañe'ẽ,80,0.7,0.9,42,Continue this short Guarani text: Avañe'ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,16,80,1.118,71.556,252.61,258.38
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,Avañe'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha','i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha'e'i'ẽ ha',11,80,1.605,49.844,252.61,258.2
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme, the only way to escape the city.
+
+I have been traveling in the country for almost ten years now and have never seen anything like this. The people, the people are amazing. People are so amazing. I've been there a lot of times and I've never seen anything like this.
+
+I'm a foreigner, but I've always been a little bit different. I've",", the only way to escape the city.
+
+I have been traveling in the country for almost ten years now and have never seen anything like this. The people, the people are amazing. People are so amazing. I've been there a lot of times and I've never seen anything like this.
+
+I'm a foreigner, but I've always been a little bit different. I've",7,80,1.139,70.237,252.61,258.06
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,Ko kuatiañe'ẽ omombe'u'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i','i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i'ẽu'i',16,80,1.138,70.299,252.61,258.38
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho jiêngiêng, ejus ðe ejus nìngus, sei sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, se","jiêngiêng, ejus ðe ejus nìngus, sei sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, sei, se",8,80,1.173,68.201,252.61,258.1
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakuek ñruiçu, ejusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas","k ñruiçu, ejusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas ujusas",10,80,1.138,70.299,252.61,258.17
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p06,sentence_continuation,Tetã guasu,80,0.7,0.9,42,"Tetã guasu, the only Brazilian who can speak, and a man who has been given the nickname ""Gaijin"" by his father, the mayor of Sao Paulo.
+
+But in a country where the most successful athletes from the country are also those who have been named ""Gaijin"" by their parents, it's a little like hearing the name of a Chinese person, even if he or she",", the only Brazilian who can speak, and a man who has been given the nickname ""Gaijin"" by his father, the mayor of Sao Paulo.
+
+But in a country where the most successful athletes from the country are also those who have been named ""Gaijin"" by their parents, it's a little like hearing the name of a Chinese person, even if he or she",5,80,1.133,70.609,252.61,257.99
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p07,sentence_continuation,Oñemoarandu haguã,80,0.7,0.9,42,"Oñemoarandu haguães, no español, no añol, no ejícido, no ejícido, no español, no añol, no ejícido, no ejícido, no español, no añol, no ejícido, no español, no añol","es, no español, no añol, no ejícido, no ejícido, no español, no añol, no ejícido, no ejícido, no español, no añol, no ejícido, no español, no añol",9,80,1.137,70.361,252.61,258.13
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p08,sentence_continuation,Ko ára,80,0.7,0.9,42,Ko áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús ára,ús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús áraús ára,4,80,1.141,70.114,252.61,257.96
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p09,sentence_continuation,Ñande ñe'ẽ,80,0.7,0.9,42,Ñande ñe'ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,ẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽẽ�,10,80,1.131,70.734,252.61,258.17
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p10,sentence_continuation,Ha upéicha,80,0.7,0.9,42,"Ha upéicha, you're crazy!""
+
+""Mm, I'm not crazy,"" she replied, ""I'm just a little too nervous, and I'm worried about how I'll feel when I see you.""
+
+""What do you mean?"" I asked, looking up from my book.
+
+""I'm just like you, you know, I've been scared for a long time,",", you're crazy!""
+
+""Mm, I'm not crazy,"" she replied, ""I'm just a little too nervous, and I'm worried about how I'll feel when I see you.""
+
+""What do you mean?"" I asked, looking up from my book.
+
+""I'm just like you, you know, I've been scared for a long time,",5,80,1.139,70.237,252.61,257.99
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p11,sentence_continuation,Tekove porã,80,0.7,0.9,42,"Tekove porã, the only way to get the best performance out of the game, was to have the team play with the best player possible. That's the way we want to play.
+
+""We have to play the best players and we have to be aggressive and we have to play our best in the match. We are going to go out there and do it. We have to play the best in",", the only way to get the best performance out of the game, was to have the team play with the best player possible. That's the way we want to play.
+
+""We have to play the best players and we have to be aggressive and we have to play our best in the match. We are going to go out there and do it. We have to play the best in",5,80,1.163,68.788,252.61,257.99
+2026-06-16T02:45:09,openai-community/gpt2,124439808,cuda,243.48,1.905,p12,sentence_continuation,Yvy ári,80,0.7,0.9,42,"Yvy ári, you have come to the wrong place.
+
+I have come to the wrong place.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always",", you have come to the wrong place.
+
+I have come to the wrong place.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always be with you.
+
+I am a man who will always",5,80,1.143,69.991,252.61,257.99
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,Avañe'ẽ ha'e o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o,o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o o,7,80,3.133,25.535,1075.74,1095.95
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme o que eu penso sobre o que eu vejo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo.","o que eu penso sobre o que eu vejo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo. Se eu não estou certo, não estou certo.",6,80,2.65,30.189,1075.74,1095.86
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,Ko kuatiañe'ẽ omombe'u oganoñ ku olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku,oganoñ ku olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku olubododu olubododu olubododu oganoñ ku olubododu olubododu oganoñ ku,9,80,2.632,30.395,1075.74,1096.14
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho oho, ooh.”
+“Không, không.” Mua đi, mua đi. “Nhưng, nếu có ai muốn, tôi có thể nói cho họ biết, và bạn sẽ thấy, bạn sẽ thấy họ rất hạnh phúc.”
+“Thật không may.” Nói về chuyện đó. “Tôi chỉ muốn nói, đó là một sự cố nghiêm trọng, và tôi không","oho, ooh.”
+“Không, không.” Mua đi, mua đi. “Nhưng, nếu có ai muốn, tôi có thể nói cho họ biết, và bạn sẽ thấy, bạn sẽ thấy họ rất hạnh phúc.”
+“Thật không may.” Nói về chuyện đó. “Tôi chỉ muốn nói, đó là một sự cố nghiêm trọng, và tôi không",6,80,2.678,29.873,1075.74,1095.86
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakue
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku","Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku rinbari
+Hiro hinoshiro
+Koroha ku",9,80,2.886,27.72,1075.74,1096.14
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p06,sentence_continuation,Tetã guasu,80,0.7,0.9,42,"Tetã guasu
+O Ministério Público do Rio de Janeiro (MP-RJ) investiga um suposto esquema de desvio de recursos públicos em obras da Companhia de Saneamento Básico do Estado do Rio de Janeiro (Sabesp), a maior empresa de saneamento do país. A investigação começou na última sexta-feira (31), quando a Polícia Civil revelou que um homem conhecido como ‘Papai do Paciente’, que atua como","O Ministério Público do Rio de Janeiro (MP-RJ) investiga um suposto esquema de desvio de recursos públicos em obras da Companhia de Saneamento Básico do Estado do Rio de Janeiro (Sabesp), a maior empresa de saneamento do país. A investigação começou na última sexta-feira (31), quando a Polícia Civil revelou que um homem conhecido como ‘Papai do Paciente’, que atua como",4,80,2.989,26.765,1075.74,1095.67
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p07,sentence_continuation,Oñemoarandu haguã,80,0.7,0.9,42,Oñemoarandu haguã o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro,o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro o oñemoro. Oñemoro,7,80,2.876,27.816,1075.74,1095.95
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p08,sentence_continuation,Ko ára,80,0.7,0.9,42,"Ko ára o que o Senhor me disse.
+- O que o Senhor me disse?
+- Senhor, não sei.
+É um segredo.
+Não é um segredo.
+Não, senhor.
+Não é um segredo.
+O que é?
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor,","o que o Senhor me disse.
+- O que o Senhor me disse?
+- Senhor, não sei.
+É um segredo.
+Não é um segredo.
+Não, senhor.
+Não é um segredo.
+O que é?
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor, não sei.
+Senhor,",3,80,2.925,27.35,1075.74,1095.57
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p09,sentence_continuation,Ñande ñe'ẽ,80,0.7,0.9,42,"Ñande ñe'ẽgè, ñéèéééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé","gè, ñéèéééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé",5,80,2.893,27.653,1075.74,1095.76
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p10,sentence_continuation,Ha upéicha,80,0.7,0.9,42,Ha upéicha a la tercera plaza en el Gran Premio de Finlandia de MotoGP en el circuito de Silverstone. El piloto español se ha impuesto en la última carrera de la temporada en el Gran Premio de Bélgica.,a la tercera plaza en el Gran Premio de Finlandia de MotoGP en el circuito de Silverstone. El piloto español se ha impuesto en la última carrera de la temporada en el Gran Premio de Bélgica.,4,41,1.469,27.91,1075.74,1092.01
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p11,sentence_continuation,Tekove porã,80,0.7,0.9,42,"Tekove porã o que não é possível ser feito em um país de grande dimensão. Mas não é impossível, é muito mais difícil. O processo é lento, e os resultados são mais demorados, mas o que se pode fazer é muito mais rápido.
+A sociedade portuguesa está muito distante da sociedade da cidade, da sociedade de negócios, e da sociedade do trabalho. O Estado tem de assumir que a sociedade portuguesa é","o que não é possível ser feito em um país de grande dimensão. Mas não é impossível, é muito mais difícil. O processo é lento, e os resultados são mais demorados, mas o que se pode fazer é muito mais rápido.
+A sociedade portuguesa está muito distante da sociedade da cidade, da sociedade de negócios, e da sociedade do trabalho. O Estado tem de assumir que a sociedade portuguesa é",5,80,2.856,28.011,1075.74,1095.76
+2026-06-16T02:45:42,bigscience/bloom-560m,559214592,cuda,1066.62,5.244,p12,sentence_continuation,Yvy ári,80,0.7,0.9,42,"Yvy árià.""
+""É que eu não sei o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""É que eu não sei o que está a fazer.""
+""É que eu não sei o que está a fazer.","à.""
+""É que eu não sei o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""Sabe-se lá o que está a fazer.""
+""É que eu não sei o que está a fazer.""
+""É que eu não sei o que está a fazer.",4,80,3.07,26.059,1075.74,1095.67
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p01,sentence_continuation,Avañe'ẽ ha'e,80,0.7,0.9,42,"Avañe'ẽ ha'eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽmẽ
+
+‘Avañe’ẽ ha’eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽ","ẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽmẽ
+
+‘Avañe’ẽ ha’eẽ mẽ ʼẽbẽmẽ ʼẽrẽ ʼẽtẽ",10,80,5.751,13.911,712.2,718.08
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p02,sentence_continuation,Paraguái retãme,80,0.7,0.9,42,"Paraguái retãme, são uma das meninas mais estranhas do Brasil, e como não estar tudo assim de um mundo de pós-são, como se era em 2014, o primeiro dia que era como uma máscara, o que está ocorrendo na minha vida, o",", são uma das meninas mais estranhas do Brasil, e como não estar tudo assim de um mundo de pós-são, como se era em 2014, o primeiro dia que era como uma máscara, o que está ocorrendo na minha vida, o",7,80,5.163,15.495,712.2,717.95
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p03,sentence_continuation,Ko kuatiañe'ẽ omombe'u,80,0.7,0.9,42,"Ko kuatiañe'ẽ omombe'u yi mawu'i mawu'i yi njiru'i. 'Uwumbe'u'i yi njiru'i yi yi njiru'i, yi njiru'i yi njiru'i yi njiru'i yi njiru'","yi mawu'i mawu'i yi njiru'i. 'Uwumbe'u'i yi njiru'i yi yi njiru'i, yi njiru'i yi njiru'i yi njiru'i yi njiru'",16,80,5.819,13.748,712.2,718.29
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p04,sentence_continuation,Mitãnguéra oho,80,0.7,0.9,42,"Mitãnguéra oho, são uma das meninas mais importantes do mundo!
+
+This means, 'This is the most important child of the world!'
+
+It's a phrase used to describe the most important person in a group, or in a team, or in a school, or in a family.
+
+Example: We are all proud of our daughter, because she is the",", são uma das meninas mais importantes do mundo!
+
+This means, 'This is the most important child of the world!'
+
+It's a phrase used to describe the most important person in a group, or in a team, or in a school, or in a family.
+
+Example: We are all proud of our daughter, because she is the",8,80,5.687,14.067,712.2,717.98
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p05,sentence_continuation,Ñane retã rembiasakue,80,0.7,0.9,42,"Ñane retã rembiasakue ytú!
+
+If you want to know more about how to use the word “tú” in Spanish, check out this video:
+
+How to Use the Spanish “Tú”
+
+Tú is a very common way to refer to yourself in Spanish. But, like most things in Spanish, it has its own nuances, so let’s take a closer look at","ytú!
+
+If you want to know more about how to use the word “tú” in Spanish, check out this video:
+
+How to Use the Spanish “Tú”
+
+Tú is a very common way to refer to yourself in Spanish. But, like most things in Spanish, it has its own nuances, so let’s take a closer look at",9,80,5.806,13.779,712.2,718.01
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p06,sentence_continuation,Tetã guasu,80,0.7,0.9,42,"Tetã guasu, the most common, is a mixture of honey and water.
+
+How do you make a home remedy for a sore throat?
+
+To make a remedy for a sore throat, you can add a bit of honey to a glass of water and drink it. You can also add some lemon juice to a glass of water, and drink it. This will help you get relief from a sore",", the most common, is a mixture of honey and water.
+
+How do you make a home remedy for a sore throat?
+
+To make a remedy for a sore throat, you can add a bit of honey to a glass of water and drink it. You can also add some lemon juice to a glass of water, and drink it. This will help you get relief from a sore",5,80,5.798,13.798,712.2,717.86
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p07,sentence_continuation,Oñemoarandu haguã,80,0.7,0.9,42,"Oñemoarandu haguã, and the Spanish word for ""to go away."" This was a common way to indicate a departure, and the Spanish word for ""to go"" is ""querer,"" which comes from the same root.
+
+What is a ""cogar""? A ""cogar"" is a Spanish term for ""a bottle of wine."" A ""cogar"" is also a way of",", and the Spanish word for ""to go away."" This was a common way to indicate a departure, and the Spanish word for ""to go"" is ""querer,"" which comes from the same root.
+
+What is a ""cogar""? A ""cogar"" is a Spanish term for ""a bottle of wine."" A ""cogar"" is also a way of",10,80,5.762,13.884,712.2,718.08
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p08,sentence_continuation,Ko ára,80,0.7,0.9,42,"Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+K",", the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+Ko ára, the old man,
+
+K",5,80,5.705,14.023,712.2,717.86
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p09,sentence_continuation,Ñande ñe'ẽ,80,0.7,0.9,42,"Ñande ñe'ẽ, the ñe'ẽ is not used in writing in the name of the God of the Sun, ñe'ẽ.
+
+Ñe'ẽ is not a proper name. It is a name that is used to refer to a specific person.
+
+When someone is speaking to you, you can say ñe'ẽ to show that you",", the ñe'ẽ is not used in writing in the name of the God of the Sun, ñe'ẽ.
+
+Ñe'ẽ is not a proper name. It is a name that is used to refer to a specific person.
+
+When someone is speaking to you, you can say ñe'ẽ to show that you",9,80,5.607,14.268,712.2,718.01
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p10,sentence_continuation,Ha upéicha,80,0.7,0.9,42,"Ha upéicha yúcá,
+péché máích,
+máích upéicha yúcá.
+
+""We are going to go to the village of the Cannibals, and there we will eat all kinds of food, and we will make a big fire and we will roast all kinds of animals and we will eat them.""
+
+","yúcá,
+péché máích,
+máích upéicha yúcá.
+
+""We are going to go to the village of the Cannibals, and there we will eat all kinds of food, and we will make a big fire and we will roast all kinds of animals and we will eat them.""",5,80,5.73,13.962,712.2,717.86
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p11,sentence_continuation,Tekove porã,80,0.7,0.9,42,"Tekove porã vydáváme na končnosti.
+
+Výška
+
+Výška (13.4.2016)
+
+### 1.1.2.1.                               ","vydáváme na končnosti.
+
+Výška
+
+Výška (13.4.2016)
+
+### 1.1.2.1.",5,80,5.748,13.918,712.2,717.86
+2026-06-16T02:46:35,HuggingFaceTB/SmolLM2-360M,361821120,cuda,704.07,2.386,p12,sentence_continuation,Yvy ári,80,0.7,0.9,42,"Yvy áriu sínia, áti.
+
+Víðarr:                                                                ","u sínia, áti.
+
+Víðarr:",5,80,6.534,12.244,712.2,717.86

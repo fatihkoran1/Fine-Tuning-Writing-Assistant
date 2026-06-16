@@ -1,0 +1,4 @@
+model_name,parameter_count,device,load_seconds,avg_tokens_per_second,avg_gpu_peak_mb
+HuggingFaceTB/SmolLM2-360M,361821120,cuda,2.386,13.924750000000001,717.975
+bigscience/bloom-560m,559214592,cuda,5.244,27.939666666666668,1095.5283333333334
+openai-community/gpt2,124439808,cuda,1.905,68.3095,258.0941666666667

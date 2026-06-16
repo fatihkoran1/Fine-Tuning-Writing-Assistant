@@ -26,7 +26,37 @@
   },
   {
     "prompt_id": "p06",
-    "prompt_type": "instruction_style",
-    "prompt_text": "Continue this short Guarani text: Avañe'ẽ"
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Tetã guasu"
+  },
+  {
+    "prompt_id": "p07",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Oñemoarandu haguã"
+  },
+  {
+    "prompt_id": "p08",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Ko ára"
+  },
+  {
+    "prompt_id": "p09",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Ñande ñe'ẽ"
+  },
+  {
+    "prompt_id": "p10",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Ha upéicha"
+  },
+  {
+    "prompt_id": "p11",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Tekove porã"
+  },
+  {
+    "prompt_id": "p12",
+    "prompt_type": "sentence_continuation",
+    "prompt_text": "Yvy ári"
   }
 ]
